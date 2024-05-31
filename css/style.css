@@ -1,0 +1,472 @@
+:root{
+    --main-color:#ffffff;
+    --main-font:800;
+    --font-family:"Montserrat", sans-serif;
+    --bs-progress-height: 3rem;
+}
+h1,h2,h3,h4,h5,h6 ,span{
+    --font-family:"Montserrat", sans-serif;
+}
+
+body{
+
+--bs-progress-height:60px;
+
+}
+.index
+{
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+
+.main-nav .navbar .navbar-brand
+{
+    font-weight: 800;
+}
+
+.my-nav{
+  color: var (--main-color);
+}
+.main-nav .navbar .nav-item
+{
+    position: relative;
+    margin: 0.8rem;
+    overflow: hidden;
+}
+.main-nav .navbar .nav-item .nav-link
+{
+    color: var(--main-color);
+    font-size: 15px;
+}
+ .main-nav .navbar .nav-item .nav-link.active::before
+{
+        content: '';
+        width: 80%;
+        height: 2px;
+        background-color:#ffffff;
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+} 
+.main-nav .navbar .nav-item .nav-link::before
+{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color:#ffffff;
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        transition: all 1s;
+} 
+
+.main-nav .navbar .nav-item .nav-link:hover::before
+{
+    width: 80%;}
+/* ============end nav============= */
+/* ================start home============= */
+.home 
+{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+   background-size: cover;
+   position: relative;
+ 
+}
+.home .container h1{
+    font-weight: 800; 
+    font-size: 50px;
+}
+.home .container .typewriter h1{
+    font-weight: 200;
+    
+}
+.home .container  span {
+    font-weight: 400;
+
+}
+
+.home .layer
+{
+   background-color: rgba(0, 0, 0, 0.667);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   display: flex;
+   align-content: center;
+   align-items: center;
+
+}
+
+ .home .icons
+{
+    color: var(--main-color);
+    padding-top: 20px;
+}
+.home .container .icons i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.308);
+    align-content: center;
+
+}
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
+  /* ============end home=================== */
+  /* =============start about=============== */
+.about
+{
+    padding-block: 100px;
+ box-shadow: 3px;
+ 
+}
+.about .precent
+{
+    height: 25px;
+}
+.about .span
+{
+    letter-spacing: 1px;
+}
+.about .f-button
+{
+transition: all 1a;
+}
+ .about .s-button
+{
+transition: all 1a;
+}
+.about .f-button:hover
+{
+color: #000000 !important;
+background-color: #ffffff !important;
+}
+.s-button:hover
+{
+    color: #ffffff !important;
+    background-color: #000000 !important;
+}
+.hero-img
+{
+   position: relative;
+
+}
+.border-layer
+{
+    width: 380px;
+    height: 420px;
+    position:absolute ;
+    bottom:-35px ;
+    left: -15px;
+    background-image: url(../imgs/dots.png);
+    z-index: -1;
+
+}
+.about p{
+word-spacing :2px;
+
+color:#748182;
+}
+.about span{
+
+    color:#748182;
+    }
+
+
+/* =============end about================ */
+/* ============== start services============== */
+.services
+{
+    background-color: #F7F7F7;
+}
+h2{
+    font-weight: 900;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 45px;
+    z-index: 99;
+}
+.services .head
+{
+    width: 25%;
+}
+ h2:after {
+    content: "";
+        width: 105%;;
+       height: 30px; 
+     background-image: url(../imgs/dots.png);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index:-1 ;
+} 
+.services .container i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.112);
+    align-content: center;
+    transition: all 1s;
+}
+.services .container .item:hover i
+{
+    background-color: #000000;
+    color:var(--main-color) ;
+}
+.services .container .item h3
+{
+font-weight: 800;
+font-size: 18px;
+
+}
+.services .container .item p
+{
+ 
+    font-size: 14;
+}
+/* ==============end services=========== */
+/* ===========start works=============== */
+ 
+.works-item
+{
+ position: relative;
+ overflow: hidden;
+ transition: all 5S 1s ease-in;
+
+}
+.img-layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.221);
+    align-content: center;
+   opacity: 0;
+   transition: all 1S ;
+}
+.works-item:hover .img-layer
+{
+opacity: 1;
+border: 5PX solid #D7D5D6;
+background-color: #ffffff;
+}
+.img-layer h6
+{
+    transform: translateY(-15%);
+    transition: all 0.5s;
+}
+.works-item:hover h6
+{
+    transform: translateY(15%);
+}
+.works .head-1 
+{
+    width: 16%;
+}
+ .img-icon
+{
+    transform: translateY(15%);
+    transition: all 0.5s;
+} 
+.works-item:hover .img-icon
+{
+    transform: translateY(-15%);
+}
+ .img-icon i{
+    width: 30px;
+    height: 30px;
+    color:#ffffff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0); 
+    align-content: center;
+  
+}
+ .img-icon i:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 0.5px solid #000000;
+}
+/* =====================end servises================ */
+/* ====================clients================ */
+.slider-img
+ {
+    width: 90px;
+    height:90px;
+    
+}
+.carousel-indicators button
+{
+    padding: 3px !important;
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important;
+    background-color: #869791 !important;
+   margin-right: 10px!important;
+}
+.head-2
+{
+    width: 22%;
+}
+ h2
+{
+margin: auto;    align-content: center;
+    font-weight: 900;
+    padding-bottom: 10px;
+font-size: 45px;
+}
+.main-clients
+{
+    background-color: #F7F7F7;
+}
+/* =================end clints========================== */
+/* =====================team start=============== */
+.head-3 
+{
+    width: 19%;
+}
+.team
+{
+    background-color: #F7F7F7;
+}
+.img-caption .img-icon i{
+    width: 40px ;
+    height: 40px;
+    color:#ffffff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0); 
+    align-content: center;
+}
+.img-team
+{
+    position: relative;
+    overflow: hidden;
+    
+}
+.team-item
+{
+    transition: all 1s;
+   border-radius: 10px;
+}
+.img-end
+{
+    transition: all 1s ;
+    overflow: hidden
+}
+ .img-caption
+{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+bottom: 10px; 
+   left: 10px;
+   top: 10px;
+   right: 10px;
+    border: 10px solid transparent;
+    align-content: center;
+    opacity: 0;
+    transition: all 1s;
+    background-color: #fff;
+    transform: rotateY(180deg);
+} 
+
+.team-item:hover .img-caption ,.img-caption:hover .img-caption
+{
+opacity: 1;
+border: 10px solid transparent;
+transform: rotatey(360deg) ;
+}
+.img-team:hover .img-end
+{
+    transform: scale(1.2);
+}
+.img-caption .img-icon i:hover
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+.icon-item i{
+    width: 60px ;
+    height: 60px;
+    color:#000000;
+    border-radius: 50%;
+    background-color: #F4F4F4; 
+    align-content: center;
+    transition: all 1s;
+}
+.icon-item i:hover
+{
+    background-color:#000000;
+    color:#ffffff;
+}
+/* ===============endteam---------------- */
+/* +============ startcontact=========== */
+.head-4
+{
+    width: 28%;
+}
+.form-color
+{
+    background-color: #F4F4F4;
+    border: none;
+}
+.submit-button {
+    margin-top: 20px !important;
+    padding-inline: 40PX!important;
+    padding-block: 10px !important;
+ background-color: #000000 !important;
+ color: #ffffff !important;
+ transition: all 0.5s !important;
+
+ }
+ .submit-button:hover
+ {
+background-color: #ffffff !important;
+color: #000000 !important;
+ }
+ .content
+ {
+    width: 80%;
+    margin: auto;
+ }
+ /* ======================end contact=================== */
+ /* ================== startfooter============ */
+ .footer p
+ {
+  background-color: #1C1C1C;
+  margin-bottom: 0;
+}
+/* +++++++++++++++++++end footer++++++++++++++++++++ */
+.nav-tabsmy
+{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+}
+/* ======================end----------------------- */
